@@ -14,6 +14,11 @@ public class DeveloperTest {
     }
 
     @Test
+    public void hasName() {
+        assertEquals("Duncan", developer.getName());
+    }
+
+    @Test
     public void canRaiseSalary() {
         developer.raiseSalary(1000.25);
         assertEquals(36000.25, developer.getSalary(), 0.01);
